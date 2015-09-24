@@ -7,7 +7,6 @@ public class Lunch
 	{
 		Scanner input = new Scanner(System.in);
 		
-		int hungry;
 		int thirsty;
 		
 		System.out.println("You are hungry and enter the lunch room");
@@ -17,10 +16,13 @@ public class Lunch
 		System.out.println("Are you thirsty? (1 for yes or 0 for no)");
 		thirsty=input.nextInt();
 		
-		if (thirsty==1)
-			System.out.println("Buy Coke");
-		if(thirsty==0)
-			System.out.println("Don't buy Coke");
+		if (thirsty==1){
+			System.out.println("Buy Coke");}
+		else if (thirsty==0){
+			System.out.println("Get water");}
+		else if (thirsty!=0){
+			System.out.println("You don't get a drink");
+		}
 		
 		System.out.println("Eat lunch");
 		System.out.println("Return tray");
