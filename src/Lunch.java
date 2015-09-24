@@ -20,7 +20,7 @@ public class Lunch
 			System.out.println("Buy Coke");}
 		else if (thirsty==0){
 			System.out.println("Get water");}
-		else if (thirsty!=0){
+		else {
 			System.out.println("You don't get a drink");
 		}
 		
